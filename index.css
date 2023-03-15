@@ -64,6 +64,15 @@ h2 {
   display: flex;
   align-items: center;
 }
+.num-likes-prescott {
+  margin-left: 7px;
+}
+.num-likes-dylan {
+  margin-left: 7px;
+}
+.num-likes-stanley {
+  margin-left: 7px;
+}
 .num {
   margin-left: 10px;
   font-weight: bolder;
@@ -95,6 +104,15 @@ h2 {
   height: 16px;
   background: limegreen;
   border-radius: 3px;
+}
+.first {
+  display: none;
+}
+.second {
+  display: none;
+}
+.third {
+  display: none;
 }
 h4 {
   margin: 10px 0 0 0;

@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
     <script type="text/javascript" src="startup.js"></script>
   </head>
-  <body>
+  <body onload="onLoad()">
     <header>
       <h1>SolveSocial</h1>
       <div class="nav-bar">
@@ -27,12 +27,12 @@
           </div>
           <p class="caption">I really like the Moyu budget cubes!</p>
           <div class="likes">
-            <div class="like-box">
+            <div onclick="toggleFirst()" class="like-box">
               <div class="middle">
-                <div class="inside"></div>
+                <div class="inside first"></div>
               </div>
             </div>
-            <p class="num">Likes: 74</p>
+            <p class="num">Likes: </p><div class="num-likes-prescott"></div>
           </div>
           <div class="comment-box">
             <h4>Comments: </h4>
@@ -60,12 +60,12 @@
           </div>
           <p class="caption">Just got a square one world record!</p>
           <div class="likes">
-            <div class="like-box">
+            <div onclick="toggleSecond()" class="like-box">
               <div class="middle">
-                <div class="inside"></div>
+                <div class="inside second"></div>
               </div>
             </div>
-            <p class="num">Likes: 80</p>
+            <p class="num">Likes: </p><div class="num-likes-dylan"></div>
           </div>
           <div class="comment-box">
             <h4>Comments: </h4>
@@ -93,12 +93,12 @@
           </div>
           <p class="caption">Working on new 4BLD techniques!</p>
           <div class="likes">
-            <div class="like-box">
+            <div onclick="toggleThird()" class="like-box">
               <div class="middle">
-                <div class="inside"></div>
+                <div class="inside third"></div>
               </div>
             </div>
-            <p class="num">Likes: 92</p>
+            <p class="num">Likes: </p><div class="num-likes-stanley"></div>
           </div>
           <div class="comment-box">
             <h4>Comments: </h4>
