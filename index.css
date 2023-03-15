@@ -118,6 +118,15 @@ h4 {
   margin: 10px 0 0 0;
   font-weight: bold;
 }
+.arrow-prescott {
+  margin: 10px 0 0 5px;
+}
+.arrow-dylan {
+  margin: 10px 0 0 5px;
+}
+.arrow-stanley {
+  margin: 10px 0 0 5px;
+}
 .comment {
   background: lightgrey;
   border-radius: 10px;
@@ -130,7 +139,10 @@ h4 {
   display: flex;
   background: white;
   border-radius: 10px 10px 5px 5px;
-
+}
+.comment-dropdown {
+  display: flex;
+  align-items: center;
 }
 .comment-time {
   margin: 0;
