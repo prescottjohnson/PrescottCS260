@@ -98,9 +98,12 @@ function addNewPrescott() {
 }
 
 function submitCommentPrescott() {
-    var name = document.getElementsByClassName('name-input').value;
-    console.log(name);
-    var comment = document.getElementsByClassName('comment-input').value;
+    var nameBox = document.getElementById('name-input-prescott');
+    localStorage.setItem('name', nameBox.value);
+    var name = localStorage.getItem('name');
+    var commentBox = document.getElementById('comment-input-prescott');
+    localStorage.setItem('comment', commentBox.value);
+    var comment = localStorage.getItem('comment');
     document.querySelector('.comment-prescott').prepend(addDiv('comment-new-prescott'));
     document.querySelector('.comment-new-prescott').append(addDiv('comment-header-prescott'));
     document.querySelector('.comment-new-prescott').append(addDiv('comment-content-prescott'));
@@ -109,7 +112,7 @@ function submitCommentPrescott() {
     document.querySelector('.comment-header-prescott').append(addHTML('p', 'comment-time-new-prescott'));
     document.querySelector('.comment-time-new-prescott').textContent = 'now';
     document.querySelector('.comment-content-prescott').append(addHTML('p', 'new-content-prescott'));
-    document.querySelector('.new-content-prescott').textContent = 'placeholder';
+    document.querySelector('.new-content-prescott').textContent = comment;
     document.querySelector('.comment-form-prescott').style.display = "none";
     name = "";
     comment = "";
@@ -121,18 +124,21 @@ function addNewDylan() {
 }
 
 function submitCommentDylan() {
-    var name = document.getElementsByClassName('name-input').value;
-    console.log(name);
-    var comment = document.getElementsByClassName('comment-input').value;
+    var nameBox = document.getElementById('name-input-dylan');
+    localStorage.setItem('name', nameBox.value);
+    var name = localStorage.getItem('name');
+    var commentBox = document.getElementById('comment-input-dylan');
+    localStorage.setItem('comment', commentBox.value);
+    var comment = localStorage.getItem('comment');
     document.querySelector('.comment-dylan').prepend(addDiv('comment-new-dylan'));
     document.querySelector('.comment-new-dylan').append(addDiv('comment-header-dylan'));
     document.querySelector('.comment-new-dylan').append(addDiv('comment-content-dylan'));
     document.querySelector('.comment-header-dylan').append(addHTML('p', 'comment-user-new-dylan'));
-    document.querySelector('.comment-user-new-dylan').textContent = 'placeholder';
+    document.querySelector('.comment-user-new-dylan').textContent = name;
     document.querySelector('.comment-header-dylan').append(addHTML('p', 'comment-time-new-dylan'));
     document.querySelector('.comment-time-new-dylan').textContent = 'now';
     document.querySelector('.comment-content-dylan').append(addHTML('p', 'new-content-dylan'));
-    document.querySelector('.new-content-dylan').textContent = 'placeholder';
+    document.querySelector('.new-content-dylan').textContent = comment;
     document.querySelector('.comment-form-dylan').style.display = "none";
     name = "";
     comment = "";
@@ -144,18 +150,21 @@ function addNewStanley() {
 }
 
 function submitCommentStanley() {
-    var name = document.getElementsByClassName('name-input').value;
-    console.log(name);
-    var comment = document.getElementsByClassName('comment-input').value;
+    var nameBox = document.getElementById('name-input-stanley');
+    localStorage.setItem('name', nameBox.value);
+    var name = localStorage.getItem('name');
+    var commentBox = document.getElementById('comment-input-stanley');
+    localStorage.setItem('comment', commentBox.value);
+    var comment = localStorage.getItem('comment');
     document.querySelector('.comment-stanley').prepend(addDiv('comment-new-stanley'));
     document.querySelector('.comment-new-stanley').append(addDiv('comment-header-stanley'));
     document.querySelector('.comment-new-stanley').append(addDiv('comment-content-stanley'));
     document.querySelector('.comment-header-stanley').append(addHTML('p', 'comment-user-new-stanley'));
-    document.querySelector('.comment-user-new-stanley').textContent = 'placeholder';
+    document.querySelector('.comment-user-new-stanley').textContent = name;
     document.querySelector('.comment-header-stanley').append(addHTML('p', 'comment-time-new-stanley'));
     document.querySelector('.comment-time-new-stanley').textContent = 'now';
     document.querySelector('.comment-content-stanley').append(addHTML('p', 'new-content-stanley'));
-    document.querySelector('.new-content-stanley').textContent = 'placeholder';
+    document.querySelector('.new-content-stanley').textContent = comment;
     document.querySelector('.comment-form-stanley').style.display = "none";
     name = "";
     comment = "";
