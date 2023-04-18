@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="index.css" />
     <title>SolveSocial.click</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="startup.js"></script>
+    
   </head>
   <body onload="onLoad()">
     <header>
@@ -34,10 +34,30 @@
             </div>
             <p class="num">Likes: </p><div class="num-likes-prescott"></div>
           </div>
-          <div onclick="dropdownPrescott()" class="comment-dropdown">
+          <div class="comment-select">
+            <div onclick="dropdownPrescott()" class="comment-dropdown">
               <h4>Comments: </h4>
-              <p class="arrow-prescott">↓</p>
+              <p class="arrow-prescott">(show)</p>
             </div>
+            <div onclick="addNewPrescott()" class="comment-right">
+              <p>Add New +</p>
+            </div>
+          </div>
+          <div class="comment-form-prescott">
+            <form>
+              <div class="form-group">
+                <label for="name">Enter Name:</label>
+                <input type="text" class="name-input">
+              </div>
+              <div class="form-group">
+                <label for="comment">Enter Comment:</label>
+                <input type="text" class="comment-input">
+              </div>
+              <div class="button-box">
+                <p onclick="submitCommentPrescott()" class="submit-btn">Submit</p>
+              </div>
+            </form>
+          </div>
           <div class="comment-box comment-prescott">
             <div class="comment">
               <div class="comment-header">
@@ -70,24 +90,44 @@
             </div>
             <p class="num">Likes: </p><div class="num-likes-dylan"></div>
           </div>
-          <div onclick="dropdownDylan()" class="comment-dropdown">
+          <div class="comment-select">
+            <div onclick="dropdownDylan()" class="comment-dropdown">
               <h4>Comments: </h4>
-              <p class="arrow-dylan">↓</p>
+              <p class="arrow-dylan">(show)</p>
             </div>
+            <div onclick="addNewDylan()" class="comment-right">
+              <p>Add New +</p>
+            </div>
+          </div>
+          <div class="comment-form-dylan">
+            <form>
+              <div class="form-group">
+                <label for="name">Enter Name:</label>
+                <input type="text" class="name-input">
+              </div>
+              <div class="form-group">
+                <label for="comment">Enter Comment:</label>
+                <input type="text" class="comment-input">
+              </div>
+              <div class="button-box">
+                <p onclick="submitCommentDylan()" class="submit-btn">Submit</p>
+              </div>
+            </form>
+          </div>
           <div class="comment-box comment-dylan">
             <div class="comment">
               <div class="comment-header">
                 <p class="comment-user">Kanye West</p>
-                <p class="comment-time">30m</p>
+                <p class="comment-time">35m</p>
               </div>
-              <div class="comment-content"><p>Totally tubular dude!</p></div>
+              <div class="comment-content"><p>Totally Tubular dude!</p></div>
             </div>
             <div class="comment">
               <div class="comment-header">
                 <p class="comment-user">Dylan Baumbach</p>
-                <p class="comment-time">56m</p>
+                <p class="comment-time">50m</p>
               </div>
-              <div class="comment-content"><p>I'm so happyyy</p></div>
+              <div class="comment-content"><p>I'm so goated bruh</p></div>
             </div>
           </div>
         </div>
@@ -106,27 +146,47 @@
             </div>
             <p class="num">Likes: </p><div class="num-likes-stanley"></div>
           </div>
-          <div onclick="dropdownStanley()" class="comment-dropdown">
-            <h4>Comments: </h4>
-            <p class="arrow-stanley">↓</p>
-          </div>
-        <div class="comment-box comment-stanley">
-          <div class="comment">
-            <div class="comment-header">
-              <p class="comment-user">Graham Siggins</p>
-              <p class="comment-time">6m</p>
+          <div class="comment-select">
+            <div onclick="dropdownStanley()" class="comment-dropdown">
+              <h4>Comments: </h4>
+              <p class="arrow-dylan">(show)</p>
             </div>
-            <div class="comment-content"><p>I could beat that with my eyes closed</p></div>
-          </div>
-          <div class="comment">
-            <div class="comment-header">
-              <p class="comment-user">Ishaan Agarwal</p>
-              <p class="comment-time">45m</p>
+            <div onclick="addNewStanley()" class="comment-right">
+              <p>Add New +</p>
             </div>
-            <div class="comment-content"><p>Ehh mid</p></div>
           </div>
-        </div>
-    </div>
+          <div class="comment-form-stanley">
+            <form>
+              <div class="form-group">
+                <label for="name">Enter Name:</label>
+                <input type="text" class="name-input">
+              </div>
+              <div class="form-group">
+                <label for="comment">Enter Comment:</label>
+                <input type="text" class="comment-input">
+              </div>
+              <div class="button-box">
+                <p onclick="submitCommentStanley()" class="submit-btn">Submit</p>
+              </div>
+            </form>
+          </div>
+          <div class="comment-box comment-stanley">
+            <div class="comment">
+              <div class="comment-header">
+                <p class="comment-user">Graham Siggins</p>
+                <p class="comment-time">6m</p>
+              </div>
+              <div class="comment-content"><p>I could do that with my eyes closed</p></div>
+            </div>
+            <div class="comment">
+              <div class="comment-header">
+                <p class="comment-user">Ishaan Agarwal</p>
+                <p class="comment-time">50m</p>
+              </div>
+              <div class="comment-content"><p>Ehhh mid</p></div>
+            </div>
+          </div>
+          </div>
   </div>
 
     <footer>
@@ -136,3 +196,4 @@
     </footer>
   </body>
 </html>
+<script type="text/javascript" src="startup.js"></script>

@@ -115,27 +115,108 @@ h2 {
   display: none;
 }
 h4 {
-  margin: 10px 0 0 0;
+  margin: 0;
   font-weight: bold;
 }
 .arrow-prescott {
-  margin: 10px 0 0 5px;
+  margin: 0 0 0 5px;
 }
 .arrow-dylan {
-  margin: 10px 0 0 5px;
+  margin: 0 0 0 5px;
 }
 .arrow-stanley {
-  margin: 10px 0 0 5px;
+  margin: 0 0 0 5px;
 }
 .comment {
   background: lightgrey;
   border-radius: 10px;
   margin-top: 10px;
 }
-.comment p {
-  /* margin: 0; */
+.comment-new-prescott {
+  background: lightgrey;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.comment-new-dylan {
+  background: lightgrey;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.comment-new-stanley {
+  background: lightgrey;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.comment-form-prescott {
+  background: white;
+  width: 85%;
+  height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  border-radius: 10px;
+  display: none;
+}
+.comment-form-dylan {
+  background: white;
+  width: 85%;
+  height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  border-radius: 10px;
+  display: none;
+}
+.comment-form-stanley {
+  background: white;
+  width: 85%;
+  height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  border-radius: 10px;
+  display: none;
+}
+.name-input {
+  width: 75%;
+  margin-left: 28px;
+  margin-bottom: 15px;
+}
+.comment-input {
+  width: 75%;
+  height: 50px;
+}
+.button-box {
+  display: flex;
+  justify-content: center;
+}
+.submit-btn {
+  color: white;
+  background: darkorange;
+  font-weight: bold;
+  padding: 6px 9px;
+  border-radius: 7px;
+}
+label {
+  font-weight: bold;
+}
+.comment-select {
+  display: flex;
+  justify-content: space-between;
 }
 .comment-header {
+  display: flex;
+  background: white;
+  border-radius: 10px 10px 5px 5px;
+}
+.comment-header-prescott {
+  display: flex;
+  background: white;
+  border-radius: 10px 10px 5px 5px;
+}
+.comment-header-dylan {
+  display: flex;
+  background: white;
+  border-radius: 10px 10px 5px 5px;
+}
+.comment-header-stanley {
   display: flex;
   background: white;
   border-radius: 10px 10px 5px 5px;
@@ -143,8 +224,32 @@ h4 {
 .comment-dropdown {
   display: flex;
   align-items: center;
+  background: darkcyan;
+  margin: 0;
+  padding: 6px;
+  border-radius: 6px;
+}
+.comment-right p {
+  margin: 0;
+}
+.comment-right {
+  background: darkcyan;
+  padding: 6px;
+  border-radius: 6px;
 }
 .comment-time {
+  margin: 0;
+  padding: 6px 0;
+}
+.comment-time-new-prescott {
+  margin: 0;
+  padding: 6px 0;
+}
+.comment-time-new-dylan {
+  margin: 0;
+  padding: 6px 0;
+}
+.comment-time-new-stanley {
   margin: 0;
   padding: 6px 0;
 }
@@ -153,9 +258,45 @@ h4 {
   margin: 0;
   padding: 6px 9px;
 }
+.comment-user-new-prescott {
+  font-weight: bolder;
+  margin: 0;
+  padding: 6px 9px;
+}
+.comment-user-new-dylan {
+  font-weight: bolder;
+  margin: 0;
+  padding: 6px 9px;
+}
+.comment-user-new-stanley {
+  font-weight: bolder;
+  margin: 0;
+  padding: 6px 9px;
+}
 .comment-content {
   display: flex;
   align-items: center;
+}
+.comment-content-prescott {
+  display: flex;
+  align-items: center;
+}
+.comment-content-prescott p {
+  margin: 12px;
+}
+.comment-content-dylan {
+  display: flex;
+  align-items: center;
+}
+.comment-content-dylan p {
+  margin: 12px;
+}
+.comment-content-stanley {
+  display: flex;
+  align-items: center;
+}
+.comment-content-stanley p {
+  margin: 12px;
 }
 .comment-content p {
   margin: 12px;
