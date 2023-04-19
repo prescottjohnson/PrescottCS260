@@ -174,12 +174,32 @@ h4 {
   border-radius: 10px;
   display: none;
 }
-.name-input {
+#name-input-prescott {
   width: 75%;
   margin-left: 28px;
   margin-bottom: 15px;
 }
-.comment-input {
+#comment-input-prescott {
+  width: 75%;
+  height: 50px;
+}
+
+#name-input-dylan {
+  width: 75%;
+  margin-left: 28px;
+  margin-bottom: 15px;
+}
+#comment-input-dylan {
+  width: 75%;
+  height: 50px;
+}
+
+#name-input-stanley {
+  width: 75%;
+  margin-left: 28px;
+  margin-bottom: 15px;
+}
+#comment-input-stanley {
   width: 75%;
   height: 50px;
 }
