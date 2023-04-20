@@ -1,5 +1,7 @@
 # HTML website
 
+My startup is a social media website for rubiks cube solvers. It will be called SolveSocial. It will allow users to post about many things cubing related. This can include new personal bests, favorite cubes, or reactions to new records. Users will be able to interact with posts as well. They can like posts that they enjoy, as well as write their own personal comments about them.
+
 Basic HTML website to serve as the main view of your work in the course.
 
 I have learned a lot about how html elements interact with each other. There were lots of times where I wanted to do something with css, but I would eventually realize that adjusting my html would give me flexibility in my css.
